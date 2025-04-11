@@ -32,7 +32,7 @@ export default function Dashboard() {
             <Link href="/profile">
               <Avatar className="transition-all hover:ring-2 hover:ring-primary/50">
                 <AvatarImage src="/placeholder-user.jpg" alt="User" />
-                <AvatarFallback>US</AvatarFallback>
+                <AvatarFallback>SJ</AvatarFallback>
               </Avatar>
             </Link>
           </div>
@@ -49,7 +49,7 @@ export default function Dashboard() {
                 <div className="flex flex-col items-center text-center">
                   <Avatar className="h-20 w-20 mb-4 ring-4 ring-secondary/20">
                     <AvatarImage src="/placeholder-user.jpg" alt="User" />
-                    <AvatarFallback>US</AvatarFallback>
+                    <AvatarFallback>SJ</AvatarFallback>
                   </Avatar>
                   <h2 className="text-xl font-semibold">Sarah Johnson</h2>
                   <p className="text-sm text-muted-foreground mb-2">

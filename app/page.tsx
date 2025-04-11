@@ -2,16 +2,16 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { AnimatedWave } from "@/components/animated-wave"
-import { BabyIcon, BirthIcon, FamilyIcon, MidwifeIcon, PregnantWomanIcon } from "@/components/pregnancy-icons"
+import { BabyIcon, BirthIcon, FamilyIcon, MidwifeIcon, PregnantWomanIcon, PregnantWomanIconLight } from "@/components/pregnancy-icons"
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-secondary/30 to-accent/30">
       <header className="px-4 py-6 bg-white shadow-sm relative z-10">
         <div className="container flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-primary flex items-center">
-            <PregnantWomanIcon className="mr-2" />
-            MaternalConnect
+          <h1 className="text-2xl font-bold text-primary flex items-center gap-2">
+            <PregnantWomanIcon className="" />
+            MaternityConnect
           </h1>
           <Link href="/login">
             <Button variant="outline" className="rounded-full">
@@ -36,8 +36,8 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/register?role=patient">
-                <Button size="lg" variant="maternal" className="w-full sm:w-auto hover-lift group">
-                  <PregnantWomanIcon className="mr-2 group-hover:animate-pulse" />
+                <Button size="lg" variant="maternal" className="w-full sm:w-auto hover-lift group gap-2">
+                  <PregnantWomanIconLight className="mr-5 group-hover:animate-pulse" />
                   I'm Pregnant
                 </Button>
               </Link>
@@ -110,7 +110,7 @@ export default function Home() {
           </Card>
         </div>
 
-        <AnimatedWave className="my-12" color="#fde4cf" height={100} />
+        <AnimatedWave className="my-12" color="#CCBD9A" height={100} />
 
         <section className="max-w-3xl mx-auto bg-white rounded-2xl shadow-md p-8 mb-12 hover:shadow-lg transition-all duration-300">
           <h3 className="text-xl font-semibold mb-6 flex items-center">

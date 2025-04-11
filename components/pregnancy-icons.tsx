@@ -1,3 +1,7 @@
+import Image from "next/image"
+import logo from "@/public/pregnantlogo.svg"
+import logolight from "@/public/pregnantlogolight.svg"
+
 export const BabyIcon = ({ className = "", size = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -19,30 +23,12 @@ export const BabyIcon = ({ className = "", size = 24, ...props }) => (
   </svg>
 )
 
-export const PregnantWomanIcon = ({ className = "", size = 24, ...props }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-    {...props}
-  >
-    <path d="M9.5 2h5" />
-    <path d="M12 2v6.5" />
-    <path d="M18 22H6" />
-    <path d="M12 22v-4" />
-    <path d="M12 18c-3.3 0-6-2.7-6-6v-4c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v4c0 3.3-2.7 6-6 6z" />
-    <path d="M13.5 8.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z" />
-    <path d="M15 11c-.2-1.7-1.7-3-3.5-3S8.2 9.3 8 11" />
-    <path d="M15 13c-.2-1.7-1.7-3-3.5-3S8.2 11.3 8 13" />
-    <path d="M15 15c-.2-1.7-1.7-3-3.5-3S8.2 13.3 8 15" />
-  </svg>
+export const PregnantWomanIcon = ({ className = "", size = 48, ...props }) => (
+<Image src={logo} alt="logo" width={size} height={size} {...props} />
+)
+
+export const PregnantWomanIconLight = ({ className = "", size = 24, ...props }) => (
+<Image src={logolight} alt="logo" color="#fff" width={size} height={size} {...props} />
 )
 
 export const MidwifeIcon = ({ className = "", size = 24, ...props }) => (
