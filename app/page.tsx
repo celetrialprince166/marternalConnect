@@ -166,7 +166,7 @@ export default function Home() {
               <PregnantWomanIcon className="text-primary" />
             </div>
           </div>
-          <h3 className="text-xl font-semibold mb-2">MaternalConnect</h3>
+          <h3 className="text-xl font-semibold mb-2">MaternityConnect</h3>
           <p className="text-muted-foreground mb-6">
             Connecting pregnant women with professional midwives for better maternal care.
           </p>
